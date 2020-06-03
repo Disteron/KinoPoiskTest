@@ -1,20 +1,19 @@
 package org.example;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 
 public class KinoPoisk {
     /**
-     * осуществление первоначальной настройки
+     * Автотест на Кинопоиске
      */
 
     @Test
-    public void setup() {
+    public void test() {
 
         //определение пути до драйвера и его настройка
         System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriver"));
